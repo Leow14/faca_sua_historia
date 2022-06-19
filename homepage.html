@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja um herói!</title>
+    <link rel="stylesheet" href="./estilo/estilo.css">
+    <link rel="shortcut icon" href="./imgs/icons/corvo.png" type="image/x-icon">
+</head>
+
+<body id="fundo" style="background-image: url(./imgs/inicial.jpg);">
+    <div class="container">
+        <div class="esp_botao_home">
+            <button id="refresh" class="botao_home"><img class="home_icon" src="./imgs/icons/casa.png"></button>
+        </div>
+        <div class="esp_botao_mochila">
+            <button id="refresh" class="botao_mochila"><img class="mochila_icon" src="./imgs/icons/mochila.png"></button>
+        </div>
+        <div class="esp_botao_regras">
+            <button onclick="regras()" class="botao_regras"><img class="regras_icon" src="./imgs/icons/regras.png"></button>
+        </div>
+        
+        <div class="box-game">
+            
+            <div class="box" id="box">
+                
+                <div class="content" id="content">
+                    <a class="letra"> Qual vai ser a classe de hoje? </a>
+                    <div class="esp_botao_principal_guerreiro">
+                        <button 
+                        class="botao_principal_guerreiro botao_principal_classe" onclick="menu_guerreiro()">Guerreiro 🗡️🛡️</button>
+                    </div>
+                    <div class="esp_botao_principal_feiticeiro">
+                        <button
+                        class="botao_principal_feiticeiro botao_principal_classe" onclick="menu_feiticeiro()">Feiticeiro 🔥🔮</button>
+                    </div>
+                    <div class="esp_botao_principal_druida ">
+                        <button
+                        class="botao_principal_druida botao_principal_classe" onclick="menu_druida()">Druida 🐻🐲</button>
+                    </div>
+                    <div class="esp_botao_principal_paladino">
+                        <button class="botao_principal_paladino botao_principal_classe" onclick="menu_paladino()">Paladino ⚜️🎠</button>
+                    </div>
+                    <div class="esp_botao_principal_ladino">
+                        <button 
+                        class="botao_principal_ladino botao_principal_classe" onclick="menu_ladino()">Ladino 🔪💰</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src=""></audio>
+
+
+    <script src="./script/guerreiro.js"></script>
+    <script src="./script/feiticeiro.js"></script>
+    <script src="./script/druida.js"></script>
+    <script src="./script/paladino.js"></script>
+    <script src="./script/ladino.js"></script>
+    <script src="./script/geral.js"></script>
+    
+
+</body>
+</html>
